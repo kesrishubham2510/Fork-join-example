@@ -21,7 +21,5 @@ public class Driver {
         forkJoinPool.invoke(shiftToUpperCase);
 
         System.out.println(shiftToUpperCase.getName());
-
-        forkJoinPool.close();
     }
 }
