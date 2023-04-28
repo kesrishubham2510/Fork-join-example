@@ -9,6 +9,8 @@ import java.util.concurrent.RecursiveTask;
       deque. Every new subtask is pushed to the deque and retreived from it only, when a thread's deque
       become empty, it pulls from another thread.
 
+    * The subtasks must be independent.
+      
     * RecursiveTask is used when the parallel task needs to return some value.
     
     * RecursiveAction is used when the parallel task does not need to return some value.
